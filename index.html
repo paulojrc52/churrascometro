@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Simulador de Juros Compostos</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Churrascometro</h1>
+    </header>
+    <form id="formSimulator">
+      <h2>Calcule o que será gasto em seu churrasco</h2>
+      <label class="erroMensager hidden">Digite o nome corretamente</label>
+      <div>
+          <label>Adultos</label>
+          <input type="number" id="adultos" placeholder="Quantidade de adultos ">
+      </div>
+
+      <label class="erroMensager hidden">Digite o valor da mensalidade corretamente</label>
+      <div>
+          <label>Crianças</label>
+          <input type="number" id="criancas" min="0.01" placeholder="Quantidade de crianças">
+      </div>
+
+      <label class="erroMensager hidden">Digite o valor da taxa corretamente</label>
+      <div>
+          <label>Duração</label>
+          <input type="number" id="duracao" min="0.01" placeholder="Duração prevista (H)">
+      </div>
+
+      <button type="submit" id="buttonForm">Calcular</button>
+    </form>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
